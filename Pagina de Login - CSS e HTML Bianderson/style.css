@@ -1,0 +1,155 @@
+/*
+Aqui importei uma fonte e deixei o body ao meu querer, com display flex e alguma coisas centralizadas.
+Além tambem de colocar um background.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 150vh;
+background: url('./img/pexels-christian-heitz-285904-842711.jpg');
+background-size: cover;
+background-position: center;
+}
+/*
+Aqui configurei a a caixa onde as informações iriam ficar como Usuario e Senha, deixei a caixa das informções transparentes
+e com um filtro embasado, alêm de tambem deixar essa caixa com box-shadow que causa um efeito de sombreamento ao redor, peguei
+o box-shadow em um site pra não perder muito tempo, o nome do site é CSS Scan.
+*/
+.container {
+width: 420px;
+background-color: transparent;
+border: 2px solid rgba(255, 255, 255, .2);
+border-radius: 10px;
+color: #fff;
+padding: 30px 40px;
+backdrop-filter: blur(10px);
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container h1 {
+font-size: 36px;
+text-align: center;
+}
+
+.input-box {
+position: relative;
+width: 100%;
+height: 50px;
+margin: 30px 0;
+}
+
+.input-box input {
+width: 100%;
+height: 100%;
+background-color: transparent;
+border: 2px solid rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+border-radius: 40px;
+outline: none;
+font-size: 16px;
+color: #fff;
+padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+color: #b4b4b4;
+}
+
+.input-box i{
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot {
+display:flex ;
+justify-content: space-between;
+margin: -15px 0 15px;
+
+}
+/* 
+margin & padding
+1 valor - margin: 20px - Todos os lados 
+2 valores - margin: 20px 30px - Em cima e embaixo, dos lados
+3 valores - padding: 20px 10px 30px - Em cima, dos lados, embaixo
+4 valores - margin: 10px 30px 12px 33px - Em cima, direita, embaixo, esquerda  
+*/
+
+
+
+.remember-forgot label {
+margin: 15px;
+    display: inline-flex; /* Alinha o texto e o checkbox na mesma linha*/
+     
+}
+
+.remember-forgot label input {
+    left: 7px;
+margin: -11px;
+accent-color: #fff;
+
+}
+
+.remember-forgot a {
+margin: 14px;
+text-decoration: none;
+color: #fff;
+}
+
+.remember-forgot a:hover {
+text-decoration: underline;
+}
+
+input[type="checkbox"] {
+    transform: scale(0.3);
+    position: relative;
+    right: -15px;
+    
+}
+
+.Login {
+width: 100%;
+margin: 15px;
+height: 50px;
+background-color: #fff;
+border: none;
+border-radius: 40px;
+cursor: pointer;
+font-size: 16px;
+color: #333;font-weight: 600;
+box-shadow: 0 0 10px  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Login:hover {
+background-color: transparent;
+border: 2px solid rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+color: #fff;
+transition: 0.5s; /*Coloquei uma transição de 0.5s, por que se eu passase o mouse por cima do botão o botão ficaria transparente de imediato*/
+}
+
+.register-link {
+font-size: 14px;
+text-align: center;
+margin: 20px 0 15px;
+}
+
+.register-link a {
+text-decoration: none;
+color: #fff;
+font-weight: 600;
+}
+
+.register-link a:hover {
+text-decoration: underline;
+
+}
